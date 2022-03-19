@@ -14,11 +14,6 @@ client = pymongo.MongoClient(conn)
 app.config["MONGO_URI"] = "mongodb://localhost:27017/mars_app"
 mongo = PyMongo(app)
 
-# Or set inline
-# mongo = PyMongo(app, uri="mongodb://localhost:27017/phone_app")
-
-
-#db.dictionary.insert_one([dictionary])
 
 
 @app.route("/")
